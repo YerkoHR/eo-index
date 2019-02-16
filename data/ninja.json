@@ -1,0 +1,10 @@
+{
+  "name": "Ninja",
+  "novice": [
+    {
+      "levels": {
+        "test": 1
+      }
+    }
+  ]
+}
