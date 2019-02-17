@@ -59,7 +59,7 @@ const reducer = props => {
     case "Zodiac":
       return zodiac;
     default:
-      return;
+      return console.log("error");
   }
 };
 

@@ -45,11 +45,11 @@ const hero = {
       levels: {
         total: 6,
         tpCost: {
-          base: 4,
+          "5": 4,
           "6": 7
         },
         afterImageChanceIncrease: {
-          base: 40,
+          "5": 40,
           "6": 65
         },
         speedModifier: 110,
@@ -71,7 +71,7 @@ const hero = {
       levels: {
         total: 8,
         tpCost: {
-          base: 5,
+          "3": 5,
           "4": 9,
           "8": 14
         },
@@ -94,7 +94,7 @@ const hero = {
       levels: {
         total: 6,
         tpCost: {
-          base: 6,
+          "5": 6,
           "6": 13
         },
         speedModifier: 90,
@@ -118,7 +118,7 @@ const hero = {
         total: 8,
         staticHPRestore: [6, 7, 8, 10, 11, 12, 13, 15],
         porcentageUserMaxHPRestore: {
-          base: 2,
+          "3": 2,
           "4": 4,
           "8": 6
         }
@@ -151,8 +151,8 @@ const hero = {
         "Deals melee STR-based bash damage to one enemy. Uses triple the user's equipped shield's DEF value as a replacement for ATK. Until Physical Shield activates, all party members take reduced physical damage.",
       levels: {
         total: 10,
-        tpUsed: {
-          base: 5,
+        tpCost: {
+          "4": 5,
           "5": 8,
           "10": 15
         },
@@ -187,17 +187,17 @@ const hero = {
       levels: {
         total: 4,
         tpCost: {
-          base: 2,
+          "3": 2,
           "4": 5
         },
         speedModifier: 50,
         bindsRemoved: {
-          base: 1,
+          "3": 1,
           "4": 3
         },
         staticTpRestore: [2, 5, 8, 15],
         percentageMaxTpRestore: {
-          base: 2,
+          "3": 2,
           "4": 5
         }
       },
@@ -224,7 +224,7 @@ const hero = {
       levels: {
         total: 6,
         tpCost: {
-          base: 3,
+          "5": 3,
           "6": 7
         },
         afterImageChanceIncrease: [35, 38, 41, 45, 49, 70],
@@ -263,7 +263,7 @@ const hero = {
       levels: {
         total: 8,
         tpCost: {
-          base: 9,
+          "3": 9,
           "4": 13,
           "8": 17
         },
@@ -288,7 +288,7 @@ const hero = {
       levels: {
         total: 8,
         tpCost: {
-          base: 10,
+          "3": 10,
           "4": 14,
           "8": 18
         },
@@ -348,7 +348,7 @@ const hero = {
       levels: {
         total: 10,
         tpCost: {
-          base: 5,
+          "4": 5,
           "5": 8,
           "10": 15
         },
@@ -383,7 +383,7 @@ const hero = {
       levels: {
         total: 4,
         tpCost: {
-          base: 3,
+          "3": 3,
           "4": 5
         },
         speedModifier: 50,
@@ -409,7 +409,7 @@ const hero = {
         },
         maximumBattles: [3, 4, 5, 6, 7, 10],
         rareBreedChanceIncrease: {
-          base: 0,
+          "5": 0,
           "6": 10
         }
       },
@@ -442,14 +442,14 @@ const hero = {
       levels: {
         total: 6,
         tpCost: {
-          base: 12,
+          "5": 12,
           "6": 20
         },
         speedModifier: 100,
         accuracyModifier: 5,
         damage: [200, 215, 230, 245, 260, 320],
         forceRestore: {
-          base: 7,
+          "5": 7,
           "6": 14
         }
       },
@@ -484,7 +484,7 @@ const hero = {
       levels: {
         total: 10,
         tpCost: {
-          base: 25,
+          "4": 25,
           "5": 32,
           "10": 40
         },
@@ -493,7 +493,7 @@ const hero = {
         attackBaseDamage: [250, 275, 300, 325, 350, 375, 400, 425],
         attackDamageLimit: [750, 825, 900, 975, 1050, 1125, 1200, 1275],
         cooldown: {
-          base: 9,
+          "4": 9,
           "5": 8,
           "10": 6
         }
@@ -513,7 +513,7 @@ const hero = {
       levels: {
         total: 8,
         tpCost: {
-          base: 14,
+          "3": 14,
           "4": 18,
           "8": 24
         },
@@ -521,7 +521,7 @@ const hero = {
         accuracyModifier: 0,
         damage: [290, 302, 314, 354, 366, 378, 390, 470],
         baseStunChance: {
-          base: 60,
+          "3": 60,
           "4": 75,
           "8": 100
         }
@@ -541,7 +541,7 @@ const hero = {
       levels: {
         total: 8,
         tpCost: {
-          base: 18,
+          "3": 18,
           "4": 25,
           "8": 32
         },
