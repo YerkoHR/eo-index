@@ -1,12 +1,12 @@
 import React from "react";
+//import Hero from "../characters/Hero";
+import { Link } from "react-router-dom";
 import "./styles.css";
 
 const characters = [
   "Hero",
   "Ninja",
   "Pugilist",
-  "Sovereign",
-  "Protector",
   "Farmer",
   "Gunner",
   "Arcanist",
@@ -26,8 +26,10 @@ const characters = [
 const Classes = () => (
   <ul>
     {characters.map(character => (
-      <li>
-        <div className="box">{character}</div>
+      <li key={character}>
+        <Link to={"/" + character}>
+          <div className="box">{character}</div>
+        </Link>
       </li>
     ))}
   </ul>
