@@ -1,4 +1,4 @@
-const data = {
+const hero = {
   name: "Hero",
   force: {
     boost: {
@@ -559,4 +559,4 @@ const data = {
   ]
 };
 
-export default data;
+export default hero;
