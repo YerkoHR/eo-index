@@ -32,7 +32,7 @@ const hero = {
       levels: {
         total: 10,
         afterimageChance: [13, 16, 19, 22, 25, 28, 31, 34, 37, 50],
-        "HP/TP Modifier": [30, 35, 40, 45, 50, 55, 60, 65, 70, 100]
+        hpTpModifier: [30, 35, 40, 45, 50, 55, 60, 65, 70, 100]
       },
       bodyPartsUsed: "Arms",
       type: "Support",
