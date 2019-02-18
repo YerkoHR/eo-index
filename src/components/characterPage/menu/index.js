@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.css";
 
 const Menu = ({ character }) => {
   return (
@@ -47,24 +48,3 @@ const Menu = ({ character }) => {
 };
 
 export default Menu;
-
-/*
-
-        <li>
-          <a>Novice</a>
-        </li>
-        <li>
-          <ul>
-            <li>
-              <a>Skill a</a>
-            </li>
-            <li>
-              <a>Skill b</a>
-            </li>
-            <li>
-              <a>Skill c</a>
-            </li>
-          </ul>
-        </li>
-
-        */

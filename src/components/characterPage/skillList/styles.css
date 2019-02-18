@@ -1,0 +1,11 @@
+.right {
+  justify-self: center;
+}
+table td,
+table th {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+.horizontal-th {
+  width: 150px;
+}

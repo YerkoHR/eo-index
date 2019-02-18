@@ -1,5 +1,5 @@
 import React from "react";
-import { isArray, isNumber, formatCamelCase } from "./dataFormat";
+import { isArray, isNumber, formatCamelCase } from "../dataFormat";
 
 const SkillTable = ({ skill }) => {
   const lvlSkills = skill.levels;
