@@ -19,7 +19,9 @@ const SkillTable = ({ skill }) => {
           .filter(key => key !== "total")
           .map((key, index) => (
             <tr key={key + index}>
-              <th>{formatCamelCase(lvlSkills, index)}</th>
+              <th className="horizontal-th">
+                {formatCamelCase(lvlSkills, index)}
+              </th>
               {isArray(lvlSkills[key])}
               {isNumber(lvlSkills[key], lvlSkills.total)}
             </tr>
