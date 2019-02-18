@@ -116,8 +116,8 @@ const hero = {
         "When the user uses an attack skill, they restore all party members' HP.",
       levels: {
         total: 8,
-        staticHPRestore: [6, 7, 8, 10, 11, 12, 13, 15],
-        porcentageUserMaxHPRestore: {
+        staticHpRestore: [6, 7, 8, 10, 11, 12, 13, 15],
+        porcentageUserMaxHpRestore: {
           "3": 2,
           "4": 4,
           "8": 6
@@ -133,7 +133,7 @@ const hero = {
         "When all party members' current percentage of HP remaining is above a certain threshold, the user's attack and action speed are increased.",
       levels: {
         total: 6,
-        currentPercentageHPThreshold: [90, 88, 86, 84, 82, 75],
+        currentPercentageHpThreshold: [90, 88, 86, 84, 82, 75],
         attackIncrease: [10, 11, 12, 13, 14, 20],
         speedMultiplier: [1.15, 1.17, 1.19, 1.21, 1.23, 1.35]
       },
