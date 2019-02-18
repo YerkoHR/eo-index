@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "./Header";
+import Header from "./header";
 import Footer from "./Footer";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, title, subTitle }) => {
   return (
     <div>
-      <Header />
+      <Header title={title} subTitle={subTitle} />
       <section className="section">{children}</section>
       <Footer />
     </div>

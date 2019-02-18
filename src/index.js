@@ -8,7 +8,7 @@ import "bulma/css/bulma.css";
 
 const App = () => {
   return (
-    <Layout>
+    <Layout title="Etrian Odyssey" subTitle="Classes">
       <ClassList />
     </Layout>
   );

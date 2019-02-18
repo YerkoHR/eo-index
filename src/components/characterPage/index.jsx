@@ -29,7 +29,7 @@ const CharacterPage = ({ match }) => {
     });
 
   return (
-    <Layout>
+    <Layout title={character.name} subTitle="Skills">
       <div className="page-container">
         <div className="left">
           <Menu character={character} />
