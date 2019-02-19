@@ -1,10 +1,229 @@
 const ninja = {
   name: "Ninja",
+  force: {
+    boost: {},
+    break: {}
+  },
   novice: [
     {
-      levels: {
-        test: 1
-      }
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    }
+  ],
+  veteran: [
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    }
+  ],
+  master: [
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
+    },
+    {
+      name: "",
+      description: "",
+      levels: {},
+      bodyPartsUsed: null,
+      type: "",
+      requeriments: null
     }
   ]
 };
