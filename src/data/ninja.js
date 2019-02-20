@@ -8,8 +8,8 @@ const ninja = {
       bodyPartsUsed: null,
       levels: {
         total: 3,
-        evasionIncrease: +65,
-        enmityIncrease: +40
+        evasionIncrease: "+65",
+        enmityIncrease: "+40"
       }
     },
     break: {
@@ -168,10 +168,10 @@ const ninja = {
       levels: {
         total: 6,
         speedModifier: 75,
-        decoyAddedEnmity: +50,
+        decoyAddedEnmity: "+50%",
         tpCost: [{ value: 4, colspan: 5 }, { value: 10, colspan: 1 }],
         percentageUserCurrentHpAsDecoyHp: [30, 40, 50, 60, 70, 100],
-        decoyAddedEvasion: [+1, +4, +7, +10, +13, +25]
+        decoyAddedEvasion: ["+1", "+4", "+7", "+10", "+13", "+25"]
       },
       bodyPartsUsed: "Head",
       type: "Support",
@@ -288,7 +288,7 @@ const ninja = {
         "When the user first dies, deals ranged STR-based fire damage to one enemy.",
       levels: {
         total: 6,
-        accuracyModifier: +50,
+        accuracyModifier: "+50",
         damage: [500, 560, 620, 680, 740, 1000]
       },
       bodyPartsUsed: null,
@@ -378,16 +378,16 @@ const ninja = {
           { value: 13, colspan: 1 }
         ],
         baseEvasionIncrease: [
-          +50,
-          +55,
-          +60,
-          +65,
-          +84,
-          +90,
-          +96,
-          +102,
-          +108,
-          +140
+          "+50",
+          "+55",
+          "+60",
+          "+65",
+          "+84",
+          "+90",
+          "+96",
+          "+102",
+          "+108",
+          "+140"
         ],
         evasionDecreasePerDodge: [
           -10,
@@ -454,7 +454,16 @@ const ninja = {
           { value: 24, colspan: 1 }
         ],
         damage: [220, 230, 240, 275, 285, 295, 305, 360],
-        ailmentForceRestore: [+10, +11, +12, +15, +16, +17, +18, +25]
+        ailmentForceRestore: [
+          "+10",
+          "+11",
+          "+12",
+          "+15",
+          "+16",
+          "+17",
+          "+18",
+          "+25"
+        ]
       },
       bodyPartsUsed: "Arms",
       type: "Attack",
@@ -472,7 +481,7 @@ const ninja = {
         total: 8,
         speedModifier: 500,
         accuracyModifier: -5,
-        addedDamagePerClone: +100,
+        addedDamagePerClone: "+100",
         baseDamage: [
           { value: "60%", colspan: 1 },
           { value: "63%", colspan: 1 },
@@ -516,7 +525,18 @@ const ninja = {
           { value: 15, colspan: 5 },
           { value: 20, colspan: 1 }
         ],
-        evasionIncrease: [+20, +21, +22, +22, +26, +27, +28, +29, +30, +40]
+        evasionIncrease: [
+          "+20",
+          "+21",
+          "+22",
+          "+22",
+          "+26",
+          "+27",
+          "+28",
+          "+29",
+          "+30",
+          "+40"
+        ]
       },
       bodyPartsUsed: "Legs",
       type: "Buff",

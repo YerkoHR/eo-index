@@ -13,6 +13,9 @@ export const isNumber = (lvSkill, total) =>
     <td colSpan={total}>{lvSkill + isInt(lvSkill)}</td>
   );
 
+export const isString = (lvSkill, total) =>
+  typeof lvSkill === "string" && <td colSpan={total}>{lvSkill}</td>;
+
 // Receive a skill, check if it's an object or array,
 // loop through the elements and manage colspan + formatting.
 

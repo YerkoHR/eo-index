@@ -49,9 +49,9 @@ const hero = {
         speedModifier: 110,
         accuracyModifier: 0,
         tpCost: [{ value: 4, colspan: 5 }, { value: 7, colspan: 1 }],
-        afterImageChanceIncrease: [
-          { value: 40, colspan: 5 },
-          { value: 65, colspan: 1 }
+        afterimageChanceIncrease: [
+          { value: "+40%", colspan: 5 },
+          { value: "+65%", colspan: 1 }
         ],
 
         damage: [180, 187, 194, 201, 208, 245]
@@ -218,7 +218,7 @@ const hero = {
         total: 6,
         accuracyModifier: 0,
         tpCost: [{ value: 3, colspan: 5 }, { value: 7, colspan: 1 }],
-        afterImageChanceIncrease: [35, 38, 41, 45, 49, 70],
+        afterimageChanceIncrease: ["+35", "+38", "+41", "+45", "+49", "+70"],
         speedModifier: [200, 150, 100, 70, 40, 1],
 
         damageModifier: [1.35, 1.38, 1.41, 1.45, 1.49, 1.7]
@@ -254,8 +254,8 @@ const hero = {
       levels: {
         total: 8,
         speedModifier: 60,
-        cutAttackaccuracyModifier: 10,
-        voltAttackaccuracyModifier: 30,
+        cutAttackaccuracyModifier: "+10%",
+        voltAttackaccuracyModifier: "+30%",
         tpCost: [
           { value: 9, colspan: 3 },
           { value: 13, colspan: 4 },
@@ -303,9 +303,9 @@ const hero = {
         "When all party members' current percentage of HP remaining is below a certain threshold, the user's defense and chance of being targeted (enmity) are increased.",
       levels: {
         total: 6,
-        currentPercentageHPThreshold: [30, 32, 34, 36, 38, 50],
+        currentPercentageHpThreshold: [30, 32, 34, 36, 38, 50],
         defenseIncrease: [15, 17, 19, 21, 23, 30],
-        enmityIncrease: [6, 8, 10, 12, 14, 20]
+        enmityIncrease: ["+6", "+8", "+10", "+12", "+14", "+20"]
       },
       bodyPartsUsed: null,
       type: "Support",
@@ -322,7 +322,7 @@ const hero = {
       levels: {
         total: 8,
         coverChance: [11, 13, 15, 17, 19, 21, 23, 34],
-        currentPercentageHPThreshold: [5, 7, 10, 12, 15, 17, 20, 30]
+        currentPercentageHpThreshold: [5, 7, 10, 12, 15, 17, 20, 30]
       },
       bodyPartsUsed: null,
       type: "Support",
@@ -393,8 +393,8 @@ const hero = {
         total: 6,
         minimumBattles: [{ value: 1, colspan: 5 }, { value: 3, colspan: 1 }],
         rareBreedChanceIncrease: [
-          { value: 0, colspan: 5 },
-          { value: 10, colspan: 1 }
+          { value: "0%", colspan: 5 },
+          { value: "+10%", colspan: 1 }
         ],
         maximumBattles: [3, 4, 5, 6, 7, 10]
       },
@@ -427,7 +427,7 @@ const hero = {
       levels: {
         total: 6,
         speedModifier: 100,
-        accuracyModifier: 5,
+        accuracyModifier: "+5%",
         tpCost: [{ value: 12, colspan: 5 }, { value: 20, colspan: 1 }],
         forceRestore: [{ value: 7, colspan: 5 }, { value: 14, colspan: 1 }],
         damage: [200, 215, 230, 245, 260, 320]
@@ -473,9 +473,36 @@ const hero = {
           { value: 8, colspan: 5 },
           { value: 6, colspan: 1 }
         ],
-        incomingDamageReduction: [20, 22, 24, 26, 28, 30, 32, 34],
-        attackBaseDamage: [250, 275, 300, 325, 350, 375, 400, 425],
-        attackDamageLimit: [750, 825, 900, 975, 1050, 1125, 1200, 1275]
+        incomingDamageReduction: [
+          { value: 20, colspan: 1 },
+          { value: 22, colspan: 1 },
+          { value: 24, colspan: 1 },
+          { value: 26, colspan: 2 },
+          { value: 28, colspan: 1 },
+          { value: 30, colspan: 1 },
+          { value: 32, colspan: 1 },
+          { value: 34, colspan: 2 }
+        ],
+        attackBaseDamage: [
+          { value: 250, colspan: 1 },
+          { value: 275, colspan: 1 },
+          { value: 300, colspan: 1 },
+          { value: 325, colspan: 2 },
+          { value: 350, colspan: 1 },
+          { value: 375, colspan: 1 },
+          { value: 400, colspan: 1 },
+          { value: 425, colspan: 2 }
+        ],
+        attackDamageLimit: [
+          { value: 750, colspan: 1 },
+          { value: 825, colspan: 1 },
+          { value: 900, colspan: 1 },
+          { value: 975, colspan: 2 },
+          { value: 1050, colspan: 1 },
+          { value: 1125, colspan: 1 },
+          { value: 1200, colspan: 1 },
+          { value: 1275, colspan: 2 }
+        ]
       },
       bodyPartsUsed: "Arms",
       type: "Attack/Defense",
@@ -519,7 +546,7 @@ const hero = {
         "Deals melee STR-based cut + fire damage to one enemy at the end of the turn. Regiment Rave's damage is increased based on how much damage other party members dealt before the user acts.",
       levels: {
         total: 8,
-        accuracyModifier: 10,
+        accuracyModifier: "+10%",
         tpCost: [
           { value: 18, colspan: 3 },
           { value: 25, colspan: 4 },
