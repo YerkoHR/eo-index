@@ -11,7 +11,7 @@ const CharacterPage = ({ match }) => {
   const character = reducer(match.params.character);
 
   return (
-    <Layout title={character.name} subTitle="Skills">
+    <Layout title={character.name} subTitle="Class">
       <div className="page-container">
         <div className="left">
           <Menu character={character} />

@@ -8,8 +8,8 @@ const hero = {
       bodyPartsUsed: null,
       levels: {
         total: 3,
-        afterImageDamageMultiplier: 2.3,
-        afterImageChanceIncrease: 50
+        afterimageDamageMultiplier: "2.3x",
+        afterimageChanceIncrease: 50
       }
     },
     break: {
@@ -20,9 +20,9 @@ const hero = {
       levels: {
         total: 3,
         accuracyModifier: 200,
-        damage: [700, 1100, 1500],
         healingPower: 75,
-        maxOverhealedHp: 75
+        maxOverhealedHp: 75,
+        damage: [700, 1100, 1500]
       }
     }
   },

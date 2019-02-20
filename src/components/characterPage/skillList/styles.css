@@ -17,3 +17,7 @@ table th {
 .tag {
   color: #f5f5f5 !important;
 }
+
+.container-force:first-child {
+  margin-bottom: 4rem;
+}
