@@ -3,14 +3,20 @@ import "./styles.css";
 
 const toTopBtn = ({ characterName }) => {
   useEffect(() => {
-    window.onscroll = () => {
-      if (document.documentElement.scrollTop > 500) {
-        document.getElementById("myBtn").style.display = "block";
-      } else {
-        document.getElementById("myBtn").style.display = "none";
-      }
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
     };
-  });
+  }, []);
+
+  const handleScroll = () => {
+    if (document.documentElement.scrollTop > 500) {
+      document.getElementById("myBtn").style.display = "block";
+    } else {
+      document.getElementById("myBtn").style.display = "none";
+    }
+  };
 
   const scrollTo = () =>
     document.getElementById("header").scrollIntoView({

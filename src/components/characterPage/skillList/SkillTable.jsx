@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  isDynamicScaling,
-  isStaticScaling,
-  formatCamelCase
-} from "../dataFormat";
+import { isDynamicScaling, isNumber, formatCamelCase } from "../dataFormat";
 
 const SkillTable = ({ skill }) => {
   const lvlSkills = skill.levels;
@@ -27,7 +23,7 @@ const SkillTable = ({ skill }) => {
                 {formatCamelCase(lvlSkills, index)}
               </th>
               {isDynamicScaling(lvlSkills[key], lvlSkills.total)}
-              {isStaticScaling(lvlSkills[key], lvlSkills.total)}
+              {isNumber(lvlSkills[key], lvlSkills.total)}
             </tr>
           ))}
       </tbody>

@@ -3,7 +3,7 @@ import SkillTable from "./SkillTable";
 
 const Skill = ({ skill }) => (
   <div className="content is-small skill-container">
-    <h1> {skill.name}</h1>
+    <h2 className="subtitle"> {skill.name}</h2>
     <p> {skill.description}</p>
     <div className="tags">
       <span className="tag">{skill.type}</span>

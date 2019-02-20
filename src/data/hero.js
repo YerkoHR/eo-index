@@ -46,16 +46,14 @@ const hero = {
         "Deals ranged STR-based cut damage to one enemy. Increases the user's chance of creating an Afterimage from this skill.",
       levels: {
         total: 6,
-        tpCost: {
-          "5": 4,
-          "6": 7
-        },
-        afterImageChanceIncrease: {
-          "5": 40,
-          "6": 65
-        },
         speedModifier: 110,
         accuracyModifier: 0,
+        tpCost: [{ value: 4, colspan: 5 }, { value: 7, colspan: 1 }],
+        afterImageChanceIncrease: [
+          { value: 40, colspan: 5 },
+          { value: 65, colspan: 1 }
+        ],
+
         damage: [180, 187, 194, 201, 208, 245]
       },
       bodyPartsUsed: "Arms",
@@ -72,13 +70,13 @@ const hero = {
         "Deals melee STR-based cut damage to one enemy. If Wide Bravery activates before the target performs an action, either due to speed or being unable to act due to ailments or binds, Wide Bravery will attack all enemies instead.",
       levels: {
         total: 8,
-        tpCost: {
-          "3": 5,
-          "4": 9,
-          "8": 14
-        },
         speedModifier: 80,
         accuracyModifier: -5,
+        tpCost: [
+          { value: 5, colspan: 3 },
+          { value: 9, colspan: 4 },
+          { value: 14, colspan: 1 }
+        ],
         damage: [240, 247, 254, 284, 291, 298, 305, 360]
       },
       bodyPartsUsed: "Arms",
@@ -95,14 +93,11 @@ const hero = {
         "Deals melee STR-based cut + ice damage to one enemy, with splash damage.",
       levels: {
         total: 6,
-        tpCost: {
-          "5": 6,
-          "6": 13
-        },
         speedModifier: 90,
         accuracyModifier: 0,
-        damage: [220, 230, 240, 250, 260, 330],
-        splashDamage: 50
+        splashDamage: 50,
+        tpCost: [{ value: 6, colspan: 5 }, { value: 13, colspan: 1 }],
+        damage: [220, 230, 240, 250, 260, 330]
       },
       bodyPartsUsed: "Arms",
       type: "Attack",
@@ -118,12 +113,13 @@ const hero = {
         "When the user uses an attack skill, they restore all party members' HP.",
       levels: {
         total: 8,
-        staticHpRestore: [6, 7, 8, 10, 11, 12, 13, 15],
-        porcentageUserMaxHpRestore: {
-          "3": 2,
-          "4": 4,
-          "8": 6
-        }
+
+        porcentageUserMaxHpRestore: [
+          { value: 2, colspan: 3 },
+          { value: 4, colspan: 4 },
+          { value: 6, colspan: 1 }
+        ],
+        staticHpRestore: [6, 7, 8, 10, 11, 12, 13, 15]
       },
       bodyPartsUsed: null,
       type: "Heal",
@@ -153,13 +149,13 @@ const hero = {
         "Deals melee STR-based bash damage to one enemy. Uses triple the user's equipped shield's DEF value as a replacement for ATK. Until Physical Shield activates, all party members take reduced physical damage.",
       levels: {
         total: 10,
-        tpCost: {
-          "4": 5,
-          "5": 8,
-          "10": 15
-        },
         speedModifier: 3,
         baseAccuracy: 98,
+        tpCost: [
+          { value: 5, colspan: 4 },
+          { value: 8, colspan: 5 },
+          { value: 15, colspan: 1 }
+        ],
         damage: [200, 205, 210, 215, 240, 245, 250, 255, 260, 300],
         incomingPhysicalDamageReduction: [
           15,
@@ -188,20 +184,15 @@ const hero = {
         "Only usable when the user is afflicted with an ailment or at least one bind. Removes any ailments, and a set number of binds from the user. Restores TP.",
       levels: {
         total: 4,
-        tpCost: {
-          "3": 2,
-          "4": 5
-        },
         speedModifier: 50,
-        bindsRemoved: {
-          "3": 1,
-          "4": 3
-        },
-        staticTpRestore: [2, 5, 8, 15],
-        percentageMaxTpRestore: {
-          "3": 2,
-          "4": 5
-        }
+        tpCost: [{ value: 2, colspan: 3 }, { value: 5, colspan: 1 }],
+
+        bindsRemoved: [{ value: 1, colspan: 3 }, { value: 3, colspan: 1 }],
+        percentageMaxTpRestore: [
+          { value: 2, colspan: 3 },
+          { value: 5, colspan: 1 }
+        ],
+        staticTpRestore: [2, 5, 8, 15]
       },
       bodyPartsUsed: null,
       type: "Heal",
@@ -225,13 +216,11 @@ const hero = {
         "Dismisses all afterimages. Until the end of the next turn, the user's damage and chance of creating afterimages are increased.",
       levels: {
         total: 6,
-        tpCost: {
-          "5": 3,
-          "6": 7
-        },
+        accuracyModifier: 0,
+        tpCost: [{ value: 3, colspan: 5 }, { value: 7, colspan: 1 }],
         afterImageChanceIncrease: [35, 38, 41, 45, 49, 70],
         speedModifier: [200, 150, 100, 70, 40, 1],
-        accuracyModifier: 0,
+
         damageModifier: [1.35, 1.38, 1.41, 1.45, 1.49, 1.7]
       },
       bodyPartsUsed: "Head",
@@ -264,14 +253,14 @@ const hero = {
         "Deals melee STR-based cut damage to one enemy, then deals ranged STR-based volt damage to all enemies. The volt attack's damage is increased based on the initial target's cut vulnerability--the lower the target's cut vulnerability, the higher the volt attack's damage.",
       levels: {
         total: 8,
-        tpCost: {
-          "3": 9,
-          "4": 13,
-          "8": 17
-        },
         speedModifier: 60,
         cutAttackaccuracyModifier: 10,
         voltAttackaccuracyModifier: 30,
+        tpCost: [
+          { value: 9, colspan: 3 },
+          { value: 13, colspan: 4 },
+          { value: 17, colspan: 1 }
+        ],
         cutAttackDamage: [125, 130, 135, 150, 155, 160, 165, 200],
         voltAttackDamage: [100, 103, 106, 118, 121, 124, 127, 150]
       },
@@ -289,16 +278,16 @@ const hero = {
         "Deals 2-3 instances of melee STR-based cut damage to one enemy. For each enemy that is present in the battle besides the target, one hit is added to the maximum amount of hits.",
       levels: {
         total: 8,
-        tpCost: {
-          "3": 10,
-          "4": 14,
-          "8": 18
-        },
         speedModifier: 70,
         accuracyModifier: -5,
-        damagePerHit: [125, 129, 133, 145, 149, 153, 157, 185],
         minimumHits: 2,
-        maximumHits: 3
+        maximumHits: 3,
+        tpCost: [
+          { value: 10, colspan: 3 },
+          { value: 14, colspan: 4 },
+          { value: 18, colspan: 1 }
+        ],
+        damagePerHit: [125, 129, 133, 145, 149, 153, 157, 185]
       },
       bodyPartsUsed: "Arms",
       type: "Attack",
@@ -349,13 +338,13 @@ const hero = {
         "Deals melee STR-based bash damage to one enemy. Uses triple the user's equipped shield's DEF value as a replacement for ATK. Until Elemental Shield activates, all party members take reduced elemental damage.",
       levels: {
         total: 10,
-        tpCost: {
-          "4": 5,
-          "5": 8,
-          "10": 15
-        },
         speedModifier: 3,
         baseAccuracy: 98,
+        tpCost: [
+          { value: 5, colspan: 4 },
+          { value: 8, colspan: 5 },
+          { value: 15, colspan: 1 }
+        ],
         damage: [200, 205, 210, 215, 240, 245, 250, 255, 260, 300],
         incomingElementalDamageReduction: [
           15,
@@ -384,11 +373,8 @@ const hero = {
         "Removes any ailments and binds from other party members in the user's row, transfers them to the user, and restores the user's Force.",
       levels: {
         total: 4,
-        tpCost: {
-          "3": 3,
-          "4": 5
-        },
         speedModifier: 50,
+        tpCost: [{ value: 3, colspan: 3 }, { value: 5, colspan: 1 }],
         forceRestore: [10, 13, 16, 25]
       },
       bodyPartsUsed: null,
@@ -405,15 +391,12 @@ const hero = {
         "Immediately begins a battle. After the battle, there is an unknown chance to immediately begin another battle. Enemies in battles started by New Challenger have an increased chance of being rare breeds.",
       levels: {
         total: 6,
-        minimumBattles: {
-          base: 1,
-          "6": 3
-        },
-        maximumBattles: [3, 4, 5, 6, 7, 10],
-        rareBreedChanceIncrease: {
-          "5": 0,
-          "6": 10
-        }
+        minimumBattles: [{ value: 1, colspan: 5 }, { value: 3, colspan: 1 }],
+        rareBreedChanceIncrease: [
+          { value: 0, colspan: 5 },
+          { value: 10, colspan: 1 }
+        ],
+        maximumBattles: [3, 4, 5, 6, 7, 10]
       },
       bodyPartsUsed: null,
       type: "Field",
@@ -443,17 +426,11 @@ const hero = {
         "Deals melee STR-based cut damage to one enemy. Restores the Force of other party members in the user's row, but not the user themself.",
       levels: {
         total: 6,
-        tpCost: {
-          "5": 12,
-          "6": 20
-        },
         speedModifier: 100,
         accuracyModifier: 5,
-        damage: [200, 215, 230, 245, 260, 320],
-        forceRestore: {
-          "5": 7,
-          "6": 14
-        }
+        tpCost: [{ value: 12, colspan: 5 }, { value: 20, colspan: 1 }],
+        forceRestore: [{ value: 7, colspan: 5 }, { value: 14, colspan: 1 }],
+        damage: [200, 215, 230, 245, 260, 320]
       },
       bodyPartsUsed: null,
       type: "Support",
@@ -485,20 +462,20 @@ const hero = {
         "Reduces all damage dealt to all party members for one turn. At the end of that turn, if Guard Rush activated at least once, deals melee STR-based bash damage to one enemy. Each time Guard Rush activates, its damage is increased by 120,, up to 9 times. ",
       levels: {
         total: 10,
-        tpCost: {
-          "4": 25,
-          "5": 32,
-          "10": 40
-        },
         attackBaseAccuracy: 150,
+        tpCost: [
+          { value: 25, colspan: 4 },
+          { value: 32, colspan: 5 },
+          { value: 40, colspan: 1 }
+        ],
+        cooldown: [
+          { value: 9, colspan: 4 },
+          { value: 8, colspan: 5 },
+          { value: 6, colspan: 1 }
+        ],
         incomingDamageReduction: [20, 22, 24, 26, 28, 30, 32, 34],
         attackBaseDamage: [250, 275, 300, 325, 350, 375, 400, 425],
-        attackDamageLimit: [750, 825, 900, 975, 1050, 1125, 1200, 1275],
-        cooldown: {
-          "4": 9,
-          "5": 8,
-          "10": 6
-        }
+        attackDamageLimit: [750, 825, 900, 975, 1050, 1125, 1200, 1275]
       },
       bodyPartsUsed: "Arms",
       type: "Attack/Defense",
@@ -514,19 +491,19 @@ const hero = {
         "Deals melee STR-based cut damage to one enemy. Attempts to stun the target. The stun chance is increased by how high the target's current HP is.",
       levels: {
         total: 8,
-        tpCost: {
-          "3": 14,
-          "4": 18,
-          "8": 24
-        },
         speedModifier: 150,
         accuracyModifier: 0,
-        damage: [290, 302, 314, 354, 366, 378, 390, 470],
-        baseStunChance: {
-          "3": 60,
-          "4": 75,
-          "8": 100
-        }
+        tpCost: [
+          { value: 14, colspan: 3 },
+          { value: 18, colspan: 4 },
+          { value: 24, colspan: 1 }
+        ],
+        baseStunChance: [
+          { value: 60, colspan: 3 },
+          { value: 75, colspan: 4 },
+          { value: 100, colspan: 1 }
+        ],
+        damage: [290, 302, 314, 354, 366, 378, 390, 470]
       },
       bodyPartsUsed: "Arms",
       type: "Attack",
@@ -542,12 +519,12 @@ const hero = {
         "Deals melee STR-based cut + fire damage to one enemy at the end of the turn. Regiment Rave's damage is increased based on how much damage other party members dealt before the user acts.",
       levels: {
         total: 8,
-        tpCost: {
-          "3": 18,
-          "4": 25,
-          "8": 32
-        },
         accuracyModifier: 10,
+        tpCost: [
+          { value: 18, colspan: 3 },
+          { value: 25, colspan: 4 },
+          { value: 32, colspan: 1 }
+        ],
         baseDamage: [250, 260, 270, 300, 310, 320, 330, 400]
       },
       bodyPartsUsed: "Arms",
