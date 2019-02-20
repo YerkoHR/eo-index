@@ -14,7 +14,7 @@ const SkillList = ({ character }) => {
           </h1>
           {character[level].map(skill => (
             <div key={skill.name} id={skill.name}>
-              <Skill skill={skill} />
+              <Skill skill={skill} name={character.name} />
             </div>
           ))}
         </section>

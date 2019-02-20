@@ -13,3 +13,7 @@ table th {
 .skill-container {
   margin: 4rem 0;
 }
+
+.tag {
+  color: #f5f5f5 !important;
+}
