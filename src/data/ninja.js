@@ -97,7 +97,7 @@ const ninja = {
       bodyPartsUsed: "Arms",
       type: "Attack",
       requeriments: {
-        weapong: "Knife",
+        weapon: "Knife",
         skill: null,
         level: null
       }
