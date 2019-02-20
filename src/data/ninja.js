@@ -33,9 +33,21 @@ const ninja = {
         speedModifier: 100,
         accuracyModifier: -6,
         damage: [60, 65, 70, 75, 95, 100, 105, 110, 115, 150],
-        tpCost: { "4": 3, "9": 6, "10": 10 },
-        baseSleepChance: { "4": "35%", "9": "45%", "10": "55%" },
-        numberOfEnemiesHit: { "4": 3, "9": 4, "10": 5 }
+        tpCost: [
+          { value: 3, colspan: 4 },
+          { value: 6, colspan: 5 },
+          { value: 10, colspan: 1 }
+        ],
+        baseSleepChance: [
+          { value: "35%", colspan: 4 },
+          { value: "45%", colspan: 5 },
+          { value: "55%", colspan: 1 }
+        ],
+        numberOfEnemiesHit: [
+          { value: 3, colspan: 4 },
+          { value: 4, colspan: 5 },
+          { value: 5, colspan: 1 }
+        ]
       },
       bodyPartsUsed: "Head",
       type: "Attack",
@@ -52,10 +64,7 @@ const ninja = {
         maxCounterattacks: 9,
         basePoisonChance: [60, 65, 70, 75, 80, 100],
         BasePoisonFactor: [25, 33, 41, 49, 57, 90],
-        tpCost: {
-          "5": 4,
-          "6": 9
-        }
+        tpCost: [{ value: 4, colspan: 5 }, { value: 9, colspan: 1 }]
       },
       bodyPartsUsed: "Arms",
       type: "Attack",
@@ -70,19 +79,20 @@ const ninja = {
       description:
         "Deals melee STR-based cut damage to one enemy. Attempts to bind the legs of the target.",
       levels: {
+        total: 8,
         speedModifier: 100,
         accuracyModifier: 0,
         damage: [150, 155, 160, 185, 190, 195, 200, 230],
-        baseLegBindChance: {
-          "3": "45%",
-          "7": "55%",
-          "8": "70"
-        },
-        tpCost: {
-          "3": 4,
-          "7": 7,
-          "8": 12
-        }
+        baseLegBindChance: [
+          { value: "45%", colspan: 3 },
+          { value: "55%", colspan: 4 },
+          { value: "70%", colspan: 1 }
+        ],
+        tpCost: [
+          { value: 4, colspan: 3 },
+          { value: 7, colspan: 4 },
+          { value: 12, colspan: 1 }
+        ]
       },
       bodyPartsUsed: "Arms",
       type: "Attack",
@@ -102,16 +112,16 @@ const ninja = {
         accuracyModifier: -3,
         duration: 4,
         damage: [200, 210, 220, 250, 260, 270, 280, 340],
-        defenseDecrease: {
-          "3": "10%",
-          "7": "17%",
-          "8": "25%"
-        },
-        tpCost: {
-          "3": 5,
-          "7": 8,
-          "8": 13
-        }
+        defenseDecrease: [
+          { value: "10%", colspan: 3 },
+          { value: "17%", colspan: 4 },
+          { value: "25%", colspan: 1 }
+        ],
+        tpCost: [
+          { value: 5, colspan: 3 },
+          { value: 8, colspan: 4 },
+          { value: 13, colspan: 1 }
+        ]
       },
       bodyPartsUsed: "Arms",
       type: "Attack",
@@ -127,10 +137,10 @@ const ninja = {
       levels: {
         total: 4,
         staticTpRestore: [2, 3, 4, 5],
-        percentageMaxTpRestore: {
-          "3": "1%",
-          "4": "2%"
-        }
+        percentageMaxTpRestore: [
+          { value: "1%", colspan: 3 },
+          { value: "2%", colspan: 1 }
+        ]
       },
       bodyPartsUsed: null,
       type: "Heal",
@@ -160,10 +170,7 @@ const ninja = {
         decoyAddedEnmity: +50,
         percentageUserCurrentHpAsDecoyHp: [30, 40, 50, 60, 70, 100],
         decoyAddedEvasion: [+1, +4, +7, +10, +13, +25],
-        tpCost: {
-          "5": 4,
-          "6": 10
-        }
+        tpCost: [{ value: 4, colspan: 5 }, { value: 10, colspan: 1 }]
       },
       bodyPartsUsed: "Head",
       type: "Support",
@@ -200,10 +207,7 @@ const ninja = {
         total: 6,
         speedModifier: 70,
         baseInflictChance: [40, 44, 48, 52, 56, 70],
-        tpCost: {
-          "5": 6,
-          "6": 10
-        }
+        tpCost: [{ value: 6, colspan: 5 }, { value: 10, colspan: 1 }]
       },
       bodyPartsUsed: "Head",
       type: "Support",
@@ -222,16 +226,16 @@ const ninja = {
         speedModifier: 70,
         accuracyModifier: -5,
         damage: [170, 178, 186, 211, 219, 227, 235, 280],
-        basePetrifyChance: {
-          "3": "25%",
-          "7": "32%",
-          "8": "40%"
-        },
-        tpCost: {
-          "3": 7,
-          "7": 11,
-          "8": 16
-        }
+        basePetrifyChance: [
+          { value: "25%", colspan: 3 },
+          { value: "32%", colspan: 4 },
+          { value: "40%", colspan: 1 }
+        ],
+        tpCost: [
+          { value: 7, colspan },
+          { value: 11, colspan: 4 },
+          { value: 16, colspan: 1 }
+        ]
       },
       bodyPartsUsed: "Arms",
       type: "Attack",
@@ -249,28 +253,25 @@ const ninja = {
         total: 8,
         speedModifier: 80,
         accuracyModifier: -5,
-        damagePerHit: {
-          "1": "120%",
-          "2": "126%",
-          "4": "132%",
-          "5": "138%",
-          "6": "144%",
-          "8": "150%"
-        },
-        minimumHits: {
-          "7": 2,
-          "8": 3
-        },
-        maximumHits: {
-          "3": 3,
-          "7": 4,
-          "8": 5
-        },
-        tpCost: {
-          "3": 8,
-          "7": 13,
-          "8": 20
-        }
+        damagePerHit: [
+          { value: "120%", colspan: 1 },
+          { value: "126%", colspan: 1 },
+          { value: "132%", colspan: 2 },
+          { value: "138%", colspan: 1 },
+          { value: "144%", colspan: 1 },
+          { value: "150%", colspan: 2 }
+        ],
+        minimumHits: [{ value: 2, colspan: 7 }, { value: 3, colspan: 1 }],
+        maximumHits: [
+          { value: 3, colspan: 3 },
+          { value: 4, colspan: 4 },
+          { value: 5, colspan: 1 }
+        ],
+        tpCost: [
+          { value: 8, colspan: 3 },
+          { value: 13, colspan: 4 },
+          { value: 20, colspan: 1 }
+        ]
       },
       bodyPartsUsed: null,
       type: "Attack",
@@ -394,11 +395,11 @@ const ninja = {
           -22,
           -28
         ],
-        tpCost: {
-          "4": 3,
-          "9": 7,
-          "10": 13
-        }
+        tpCost: [
+          { value: 3, colspan: 4 },
+          { value: 7, colspan: 5 },
+          { value: 13, colspan: 1 }
+        ]
       },
       bodyPartsUsed: "Legs",
       type: "Support",
@@ -413,10 +414,7 @@ const ninja = {
         total: 6,
         speedModifier: 70,
         basePanicChance: [28, 30, 32, 34, 36, 45],
-        tpCost: {
-          "5": 13,
-          "6": 20
-        }
+        tpCost: [{ value: 13, colspan: 5 }, { value: 20, colspan: 1 }]
       },
       bodyPartsUsed: "Head",
       type: "Support",
@@ -450,11 +448,11 @@ const ninja = {
         speedModifier: 80,
         damage: [220, 230, 240, 275, 285, 295, 305, 360],
         ailmentForceRestore: [+10, +11, +12, +15, +16, +17, +18, +25],
-        tpCost: {
-          "3": 12,
-          "7": 17,
-          "8": 24
-        }
+        tpCost: [
+          { value: 12, colspan: 2 },
+          { value: 17, colspan: 4 },
+          { value: 24, colspan: 1 }
+        ]
       },
       bodyPartsUsed: "Arms",
       type: "Attack",
@@ -473,23 +471,20 @@ const ninja = {
         speedModifier: 500,
         accuracyModifier: -5,
         addedDamagePerClone: +100,
-        baseDamage: {
-          "1": "60%",
-          "2": "63%",
-          "4": "66%",
-          "5": "69%",
-          "6": "72%",
-          "8": "75%"
-        },
-        minimumHits: {
-          "7": 2,
-          "8": 3
-        },
-        maximumHits: {
-          "2": 3,
-          "7": 4,
-          "8": 5
-        }
+        baseDamage: [
+          { value: "60%", colspan: 1 },
+          { value: "63%", colspan: 1 },
+          { value: "66%", colspan: 2 },
+          { value: "69%", colspan: 1 },
+          { value: "72%", colspan: 1 },
+          { value: "75%", colspan: 2 }
+        ],
+        minimumHits: [{ value: 2, colspan: 7 }, { value: 3, colspan: 1 }],
+        maximumHits: [
+          { value: 3, colspan: 2 },
+          { value: 4, colspan: 5 },
+          { value: 5, colspan: 1 }
+        ]
       },
       bodyPartsUsed: "Arms",
       type: "Attack",
@@ -510,16 +505,16 @@ const ninja = {
         speedModifier: 100,
         duration: 4,
         evasionIncrease: [+20, +21, +22, +22, +26, +27, +28, +29, +30, +40],
-        percentageCurrentHpCost: {
-          "4": "10%",
-          "9": "30%",
-          "10": "50%"
-        },
-        tpCost: {
-          "4": 10,
-          "9": 15,
-          "10": 20
-        }
+        percentageCurrentHpCost: [
+          { value: "10%", colspan: 4 },
+          { value: "30%", colspan: 5 },
+          { value: "50%", colspan: 1 }
+        ],
+        tpCost: [
+          { value: 10, colspan: 4 },
+          { value: 15, colspan: 5 },
+          { value: 20, colspan: 1 }
+        ]
       },
       bodyPartsUsed: "Legs",
       type: "Buff",

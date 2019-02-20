@@ -7,22 +7,32 @@ const isInt = number => (number % 1 === 0 ? "%" : "x");
 // Receive a skill and the total of levels, check if it's an integer,
 // apply colspan equal to the total and apply formatting.
 
-export const isNumber = (lvSkill, total) =>
+export const isStaticScaling = (lvSkill, total) =>
   Number.isInteger(lvSkill) && (
     <td colSpan={total}>{lvSkill + isInt(lvSkill)}</td>
   );
 
 // Receive a skill, check if it's an object or array,
 // loop through the elements and manage colspan + formatting.
-
+/*
 export const isArray = lvSkill => {
   return Array.isArray(lvSkill)
     ? lvSkill.map(value => <td key={value}> {value + isInt(value)} </td>)
-    : Object.keys(lvSkill).map(value => (
+    : Object.keys(lvSkill).map((value, index) => (
         <td colSpan={value} key={value}>
           {lvSkill[value]}
         </td>
       ));
+};*/
+export const isDynamicScaling = (lvSkill, total) => {
+  return lvSkill.length < total
+    ? lvSkill.map(skill => (
+        <td colspan={skill.colspan} key={skill.value}>
+          {" "}
+          {skill.value}{" "}
+        </td>
+      ))
+    : lvSkill.map(value => <td key={value}> {value + isInt(value)} </td>);
 };
 
 // Receive an object with skills that have levels and an index,
