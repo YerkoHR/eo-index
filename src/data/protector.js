@@ -1,8 +1,22 @@
 const protector = {
   name: "Protector",
   force: {
-    boost: {},
-    break: {}
+    boost: {
+      name: "Shield Protect",
+      description: "For 3 turns, increases the effectiveness of shield skills.",
+      bodyPartsUsed: null,
+      levels: {
+        total: 3,
+        damageReductionMultiplier: "1.5x"
+      }
+    },
+    break: {
+      name: "Painless",
+      description:
+        "Nullifies all damaging attacks to the party for one turn.      ",
+      bodyPartsUsed: "Arms",
+      levels: null
+    }
   },
   novice: [
     {

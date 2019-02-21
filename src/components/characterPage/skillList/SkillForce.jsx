@@ -13,7 +13,9 @@ const SkillForce = ({ character }) => {
               {"Force Boost:  " + character.force[type].name}
             </h2>
             <p>{character.force[type].description}</p>
-            <SkillTable skill={character.force[type]} />
+            {character.force[type].levels && (
+              <SkillTable skill={character.force[type]} />
+            )}
             {character.force[type].bodyPartsUsed && (
               <span className={"tag " + character.name}>
                 {character.force[type].bodyPartsUsed}
