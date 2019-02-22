@@ -9,7 +9,7 @@ const hero = {
       levels: {
         total: 3,
         afterimageDamageMultiplier: "2.3x",
-        afterimageChanceIncrease: 50
+        afterimageChanceIncrease: "+50%"
       }
     },
     break: {
@@ -19,10 +19,10 @@ const hero = {
       bodyPartsUsed: null,
       levels: {
         total: 3,
-        accuracyModifier: 200,
-        healingPower: 75,
-        maxOverhealedHp: 75,
-        damage: [700, 1100, 1500]
+        accuracyModifier: "+200%",
+        healingPower: "75%",
+        maxOverhealedHp: "75%",
+        damage: ["700%", "1100%", "1500%"]
       }
     }
   },
@@ -33,8 +33,30 @@ const hero = {
         "Gives the user a chance to create an afterimage when using any attack skill. The afterimage is a copy of the user, stat-wise, with a modifier applied to their HP. On the turn after they are created, afterimages will use the same skill that created them. At the end of that turn, they will vanish.",
       levels: {
         total: 10,
-        afterimageChance: [13, 16, 19, 22, 25, 28, 31, 34, 37, 50],
-        hpTpModifier: [30, 35, 40, 45, 50, 55, 60, 65, 70, 100]
+        afterimageChance: [
+          "13%",
+          "16%",
+          "19%",
+          "22%",
+          "25%",
+          "28%",
+          "31%",
+          "34%",
+          "37%",
+          "50%"
+        ],
+        hpTpModifier: [
+          "30%",
+          "35%",
+          "40%",
+          "45%",
+          "50%",
+          "55%",
+          "60%",
+          "65%",
+          "70%",
+          "100%"
+        ]
       },
       bodyPartsUsed: "Arms",
       type: "Support",
@@ -46,15 +68,15 @@ const hero = {
         "Deals ranged STR-based cut damage to one enemy. Increases the user's chance of creating an Afterimage from this skill.",
       levels: {
         total: 6,
-        speedModifier: 110,
-        accuracyModifier: 0,
+        speedModifier: "110%",
+        accuracyModifier: "0%",
         tpCost: [{ value: 4, colspan: 5 }, { value: 7, colspan: 1 }],
         afterimageChanceIncrease: [
           { value: "+40%", colspan: 5 },
           { value: "+65%", colspan: 1 }
         ],
 
-        damage: [180, 187, 194, 201, 208, 245]
+        damage: ["180%", "187%", "194%", "201%", "208%", "245%"]
       },
       bodyPartsUsed: "Arms",
       type: "Attack",
@@ -70,14 +92,14 @@ const hero = {
         "Deals melee STR-based cut damage to one enemy. If Wide Bravery activates before the target performs an action, either due to speed or being unable to act due to ailments or binds, Wide Bravery will attack all enemies instead.",
       levels: {
         total: 8,
-        speedModifier: 80,
-        accuracyModifier: -5,
+        speedModifier: "80%",
+        accuracyModifier: "-5%",
         tpCost: [
           { value: 5, colspan: 3 },
           { value: 9, colspan: 4 },
           { value: 14, colspan: 1 }
         ],
-        damage: [240, 247, 254, 284, 291, 298, 305, 360]
+        damage: ["240%", "247%", "254%", "284%", "291%", "298%", "305%", "360%"]
       },
       bodyPartsUsed: "Arms",
       type: "Attack",
@@ -93,11 +115,11 @@ const hero = {
         "Deals melee STR-based cut + ice damage to one enemy, with splash damage.",
       levels: {
         total: 6,
-        speedModifier: 90,
-        accuracyModifier: 0,
-        splashDamage: 50,
+        speedModifier: "90%",
+        accuracyModifier: "0%",
+        splashDamage: "50%",
         tpCost: [{ value: 6, colspan: 5 }, { value: 13, colspan: 1 }],
-        damage: [220, 230, 240, 250, 260, 330]
+        damage: ["220%", "230%", "240%", "250%", "260%", "330%"]
       },
       bodyPartsUsed: "Arms",
       type: "Attack",
@@ -115,9 +137,9 @@ const hero = {
         total: 8,
 
         porcentageUserMaxHpRestore: [
-          { value: 2, colspan: 3 },
-          { value: 4, colspan: 4 },
-          { value: 6, colspan: 1 }
+          { value: "2%", colspan: 3 },
+          { value: "4%", colspan: 4 },
+          { value: "6%", colspan: 1 }
         ],
         staticHpRestore: [6, 7, 8, 10, 11, 12, 13, 15]
       },
@@ -131,9 +153,16 @@ const hero = {
         "When all party members' current percentage of HP remaining is above a certain threshold, the user's attack and action speed are increased.",
       levels: {
         total: 6,
-        currentPercentageHpThreshold: [90, 88, 86, 84, 82, 75],
-        attackIncrease: [10, 11, 12, 13, 14, 20],
-        speedMultiplier: [1.15, 1.17, 1.19, 1.21, 1.23, 1.35]
+        currentPercentageHpThreshold: [
+          "90%",
+          "88%",
+          "86%",
+          "84%",
+          "82%",
+          "75%"
+        ],
+        attackIncrease: ["10%", "11%", "12%", "13%", "14%", "20%"],
+        speedMultiplier: ["1.15x", "1.17x", "1.19x", "1.21x", "1.23x", "1.35x"]
       },
       bodyPartsUsed: null,
       type: "Support",
@@ -149,25 +178,36 @@ const hero = {
         "Deals melee STR-based bash damage to one enemy. Uses triple the user's equipped shield's DEF value as a replacement for ATK. Until Physical Shield activates, all party members take reduced physical damage.",
       levels: {
         total: 10,
-        speedModifier: 3,
-        baseAccuracy: 98,
+        speedModifier: "3%",
+        baseAccuracy: "98%",
         tpCost: [
           { value: 5, colspan: 4 },
           { value: 8, colspan: 5 },
           { value: 15, colspan: 1 }
         ],
-        damage: [200, 205, 210, 215, 240, 245, 250, 255, 260, 300],
+        damage: [
+          "200%",
+          "205%",
+          "210%",
+          "215%",
+          "240%",
+          "245%",
+          "250%",
+          "255%",
+          "260%",
+          "300%"
+        ],
         incomingPhysicalDamageReduction: [
-          15,
-          16,
-          17,
-          18,
-          21,
-          22,
-          23,
-          24,
-          25,
-          30
+          "15%",
+          "16%",
+          "17%",
+          "18%",
+          "21%",
+          "22%",
+          "23%",
+          "24%",
+          "25%",
+          "30%"
         ]
       },
       bodyPartsUsed: "Arms",
@@ -184,13 +224,13 @@ const hero = {
         "Only usable when the user is afflicted with an ailment or at least one bind. Removes any ailments, and a set number of binds from the user. Restores TP.",
       levels: {
         total: 4,
-        speedModifier: 50,
+        speedModifier: "50%",
         tpCost: [{ value: 2, colspan: 3 }, { value: 5, colspan: 1 }],
 
         bindsRemoved: [{ value: 1, colspan: 3 }, { value: 3, colspan: 1 }],
         percentageMaxTpRestore: [
-          { value: 2, colspan: 3 },
-          { value: 5, colspan: 1 }
+          { value: "2%", colspan: 3 },
+          { value: "5%", colspan: 1 }
         ],
         staticTpRestore: [2, 5, 8, 15]
       },
@@ -216,12 +256,18 @@ const hero = {
         "Dismisses all afterimages. Until the end of the next turn, the user's damage and chance of creating afterimages are increased.",
       levels: {
         total: 6,
-        accuracyModifier: 0,
         tpCost: [{ value: 3, colspan: 5 }, { value: 7, colspan: 1 }],
-        afterimageChanceIncrease: ["+35", "+38", "+41", "+45", "+49", "+70"],
-        speedModifier: [200, 150, 100, 70, 40, 1],
+        afterimageChanceIncrease: [
+          "+35%",
+          "+38%",
+          "+41%",
+          "+45%",
+          "+49%",
+          "+70%"
+        ],
+        speedModifier: ["200%", "150%", "100%", "70%", "40%", "1%"],
 
-        damageModifier: [1.35, 1.38, 1.41, 1.45, 1.49, 1.7]
+        damageModifier: ["1.35x", "1.38x", "1.41x", "1.45x", "1.49x", "1.7x"]
       },
       bodyPartsUsed: "Head",
       type: "Support",
@@ -237,7 +283,16 @@ const hero = {
         "When an afterimage of the user is present, and the user uses a skill, the user is refunded a percentage of the TP spent on that skill.",
       levels: {
         total: 8,
-        percentageTpCostRefunded: [20, 23, 26, 29, 32, 35, 38, 50]
+        percentageTpCostRefunded: [
+          "20%",
+          "23%",
+          "26%",
+          "29%",
+          "32%",
+          "35%",
+          "38%",
+          "50%"
+        ]
       },
       bodyPartsUsed: null,
       type: "Heal",
@@ -253,7 +308,7 @@ const hero = {
         "Deals melee STR-based cut damage to one enemy, then deals ranged STR-based volt damage to all enemies. The volt attack's damage is increased based on the initial target's cut vulnerability--the lower the target's cut vulnerability, the higher the volt attack's damage.",
       levels: {
         total: 8,
-        speedModifier: 60,
+        speedModifier: "60%",
         cutAttackaccuracyModifier: "+10%",
         voltAttackaccuracyModifier: "+30%",
         tpCost: [
@@ -261,8 +316,26 @@ const hero = {
           { value: 13, colspan: 4 },
           { value: 17, colspan: 1 }
         ],
-        cutAttackDamage: [125, 130, 135, 150, 155, 160, 165, 200],
-        voltAttackDamage: [100, 103, 106, 118, 121, 124, 127, 150]
+        cutAttackDamage: [
+          "125%",
+          "130%",
+          "135%",
+          "150%",
+          "155%",
+          "160%",
+          "165%",
+          "200%"
+        ],
+        voltAttackDamage: [
+          "100%",
+          "103%",
+          "106%",
+          "118%",
+          "121%",
+          "124%",
+          "127%",
+          "150%"
+        ]
       },
       bodyPartsUsed: "Arms",
       type: "Attack",
@@ -278,8 +351,8 @@ const hero = {
         "Deals 2-3 instances of melee STR-based cut damage to one enemy. For each enemy that is present in the battle besides the target, one hit is added to the maximum amount of hits.",
       levels: {
         total: 8,
-        speedModifier: 70,
-        accuracyModifier: -5,
+        speedModifier: "70%",
+        accuracyModifier: "-5%",
         minimumHits: 2,
         maximumHits: 3,
         tpCost: [
@@ -287,7 +360,16 @@ const hero = {
           { value: 14, colspan: 4 },
           { value: 18, colspan: 1 }
         ],
-        damagePerHit: [125, 129, 133, 145, 149, 153, 157, 185]
+        damagePerHit: [
+          "125%",
+          "129%",
+          "133%",
+          "145%",
+          "149%",
+          "153%",
+          "157%",
+          "185%"
+        ]
       },
       bodyPartsUsed: "Arms",
       type: "Attack",
@@ -303,9 +385,16 @@ const hero = {
         "When all party members' current percentage of HP remaining is below a certain threshold, the user's defense and chance of being targeted (enmity) are increased.",
       levels: {
         total: 6,
-        currentPercentageHpThreshold: [30, 32, 34, 36, 38, 50],
-        defenseIncrease: [15, 17, 19, 21, 23, 30],
-        enmityIncrease: ["+6", "+8", "+10", "+12", "+14", "+20"]
+        currentPercentageHpThreshold: [
+          "30%",
+          "32%",
+          "34%",
+          "36%",
+          "38%",
+          "50%"
+        ],
+        defenseIncrease: ["15%", "17%", "19%", "21%", "23%", "30%"],
+        enmityIncrease: ["+6%", "+8%", "+10%", "+12%", "+14%", "+20%"]
       },
       bodyPartsUsed: null,
       type: "Support",
@@ -321,8 +410,17 @@ const hero = {
         "Passively gives the user and any afterimages of theirs a chance to take damage for a party member whose percentage of HP remaining is below a certain threshold.",
       levels: {
         total: 8,
-        coverChance: [11, 13, 15, 17, 19, 21, 23, 34],
-        currentPercentageHpThreshold: [5, 7, 10, 12, 15, 17, 20, 30]
+        coverChance: ["11%", "13%", "15%", "17%", "19%", "21%", "23%", "34%"],
+        currentPercentageHpThreshold: [
+          "5%",
+          "7%",
+          "10%",
+          "12%",
+          "15%",
+          "17%",
+          "20%",
+          "30%"
+        ]
       },
       bodyPartsUsed: null,
       type: "Support",
@@ -338,25 +436,36 @@ const hero = {
         "Deals melee STR-based bash damage to one enemy. Uses triple the user's equipped shield's DEF value as a replacement for ATK. Until Elemental Shield activates, all party members take reduced elemental damage.",
       levels: {
         total: 10,
-        speedModifier: 3,
-        baseAccuracy: 98,
+        speedModifier: "3%",
+        baseAccuracy: "98%",
         tpCost: [
           { value: 5, colspan: 4 },
           { value: 8, colspan: 5 },
           { value: 15, colspan: 1 }
         ],
-        damage: [200, 205, 210, 215, 240, 245, 250, 255, 260, 300],
+        damage: [
+          "200%",
+          "205%",
+          "210%",
+          "215%",
+          "240%",
+          "245%",
+          "250%",
+          "255%",
+          "260%",
+          "300%"
+        ],
         incomingElementalDamageReduction: [
-          15,
-          16,
-          17,
-          18,
-          21,
-          22,
-          23,
-          24,
-          25,
-          30
+          "15%",
+          "16%",
+          "17%",
+          "18%",
+          "21%",
+          "22%",
+          "23%",
+          "24%",
+          "25%",
+          "30%"
         ]
       },
       bodyPartsUsed: "Arms",
@@ -373,9 +482,9 @@ const hero = {
         "Removes any ailments and binds from other party members in the user's row, transfers them to the user, and restores the user's Force.",
       levels: {
         total: 4,
-        speedModifier: 50,
+        speedModifier: "50%",
         tpCost: [{ value: 3, colspan: 3 }, { value: 5, colspan: 1 }],
-        forceRestore: [10, 13, 16, 25]
+        forceRestore: ["10%", "13%", "16%", "25%"]
       },
       bodyPartsUsed: null,
       type: "Support",
@@ -407,130 +516,50 @@ const hero = {
     {
       name: "Dark Image",
       description:
-        "Immediately begins a battle. After the battle, there is an unknown chance to immediately begin another battle. Enemies in battles started by New Challenger have an increased chance of being rare breeds.",
+        "Gives afterimages generated by the user to not disappear at the end of turns.",
       levels: {
         total: 10,
-        persistChance: [11, 12, 14, 15, 17, 18, 20, 21, 23, 34]
-      },
-      bodyPartsUsed: null,
-      type: "Support",
-      requeriments: {
-        weapon: null,
-        skill: "Graceful Image",
-        level: 3
-      }
-    },
-    {
-      name: "Force Gift",
-      description:
-        "Deals melee STR-based cut damage to one enemy. Restores the Force of other party members in the user's row, but not the user themself.",
-      levels: {
-        total: 6,
-        speedModifier: 100,
-        accuracyModifier: "+5%",
-        tpCost: [{ value: 12, colspan: 5 }, { value: 20, colspan: 1 }],
-        forceRestore: [{ value: 7, colspan: 5 }, { value: 14, colspan: 1 }],
-        damage: [200, 215, 230, 245, 260, 320]
-      },
-      bodyPartsUsed: null,
-      type: "Support",
-      requeriments: {
-        weapon: null,
-        skill: "Graceful Image",
-        level: 3
-      }
-    },
-    {
-      name: "Retain Force",
-      description:
-        "When the user's Force Boost duration ends, the user recovers some Force.",
-      levels: {
-        total: 4,
-        forceRestore: [5, 10, 15, 25]
-      },
-      bodyPartsUsed: null,
-      type: "Support",
-      requeriments: {
-        weapon: null,
-        skill: "Force Gift",
-        level: 3
-      }
-    },
-    {
-      name: "Guard Rush",
-      description:
-        "Reduces all damage dealt to all party members for one turn. At the end of that turn, if Guard Rush activated at least once, deals melee STR-based bash damage to one enemy. Each time Guard Rush activates, its damage is increased by 120,, up to 9 times. ",
-      levels: {
-        total: 10,
-        attackBaseAccuracy: 150,
-        tpCost: [
-          { value: 25, colspan: 4 },
-          { value: 32, colspan: 5 },
-          { value: 40, colspan: 1 }
-        ],
-        cooldown: [
-          { value: 9, colspan: 4 },
-          { value: 8, colspan: 5 },
-          { value: 6, colspan: 1 }
-        ],
-        incomingDamageReduction: [
-          { value: 20, colspan: 1 },
-          { value: 22, colspan: 1 },
-          { value: 24, colspan: 1 },
-          { value: 26, colspan: 2 },
-          { value: 28, colspan: 1 },
-          { value: 30, colspan: 1 },
-          { value: 32, colspan: 1 },
-          { value: 34, colspan: 2 }
-        ],
-        attackBaseDamage: [
-          { value: 250, colspan: 1 },
-          { value: 275, colspan: 1 },
-          { value: 300, colspan: 1 },
-          { value: 325, colspan: 2 },
-          { value: 350, colspan: 1 },
-          { value: 375, colspan: 1 },
-          { value: 400, colspan: 1 },
-          { value: 425, colspan: 2 }
-        ],
-        attackDamageLimit: [
-          { value: 750, colspan: 1 },
-          { value: 825, colspan: 1 },
-          { value: 900, colspan: 1 },
-          { value: 975, colspan: 2 },
-          { value: 1050, colspan: 1 },
-          { value: 1125, colspan: 1 },
-          { value: 1200, colspan: 1 },
-          { value: 1275, colspan: 2 }
+        persistChance: [
+          "11%",
+          "12%",
+          "14%",
+          "15%",
+          "17%",
+          "18%",
+          "20%",
+          "21%",
+          "23%",
+          "34%"
         ]
       },
-      bodyPartsUsed: "Arms",
-      type: "Attack/Defense",
+      bodyPartsUsed: null,
+      type: "Support",
       requeriments: {
-        weapon: "Shield",
-        skill: "Elemental Shield",
+        weapon: null,
+        skill: "Graceful Image",
         level: 3
       }
     },
+
     {
       name: "Act Breaker",
       description:
         "Deals melee STR-based cut damage to one enemy. Attempts to stun the target. The stun chance is increased by how high the target's current HP is.",
       levels: {
         total: 8,
-        speedModifier: 150,
-        accuracyModifier: 0,
+        speedModifier: "150%",
+        accuracyModifier: "0%",
         tpCost: [
           { value: 14, colspan: 3 },
           { value: 18, colspan: 4 },
           { value: 24, colspan: 1 }
         ],
         baseStunChance: [
-          { value: 60, colspan: 3 },
-          { value: 75, colspan: 4 },
-          { value: 100, colspan: 1 }
+          { value: "60%", colspan: 3 },
+          { value: "75%", colspan: 4 },
+          { value: "100%", colspan: 1 }
         ],
-        damage: [290, 302, 314, 354, 366, 378, 390, 470]
+        damage: ["290%", "302%", "314%", "354%", "366%", "378%", "390%", "470%"]
       },
       bodyPartsUsed: "Arms",
       type: "Attack",
@@ -552,13 +581,117 @@ const hero = {
           { value: 25, colspan: 4 },
           { value: 32, colspan: 1 }
         ],
-        baseDamage: [250, 260, 270, 300, 310, 320, 330, 400]
+        baseDamage: [
+          "250%",
+          "260%",
+          "270%",
+          "300%",
+          "310%",
+          "320%",
+          "330%",
+          "400%"
+        ]
       },
       bodyPartsUsed: "Arms",
       type: "Attack",
       requeriments: {
         weapon: "Sword",
         skill: "Act Breaker",
+        level: 3
+      }
+    },
+    {
+      name: "Force Gift",
+      description:
+        "Deals melee STR-based cut damage to one enemy. Restores the Force of other party members in the user's row, but not the user themself.",
+      levels: {
+        total: 6,
+        speedModifier: "100%",
+        accuracyModifier: "+5%",
+        tpCost: [{ value: 12, colspan: 5 }, { value: 20, colspan: 1 }],
+        forceRestore: [
+          { value: "7%", colspan: 5 },
+          { value: "14%", colspan: 1 }
+        ],
+        damage: ["200%", "215%", "230%", "245%", "260%", "320%"]
+      },
+      bodyPartsUsed: null,
+      type: "Support",
+      requeriments: {
+        weapon: null,
+        skill: "Graceful Image",
+        level: 3
+      }
+    },
+    {
+      name: "Retain Force",
+      description:
+        "When the user's Force Boost duration ends, the user recovers some Force.",
+      levels: {
+        total: 4,
+        forceRestore: ["5%", "10%", "15%", "25%"]
+      },
+      bodyPartsUsed: null,
+      type: "Support",
+      requeriments: {
+        weapon: null,
+        skill: "Force Gift",
+        level: 3
+      }
+    },
+    {
+      name: "Guard Rush",
+      description:
+        "Reduces all damage dealt to all party members for one turn. At the end of that turn, if Guard Rush activated at least once, deals melee STR-based bash damage to one enemy. Each time Guard Rush activates, its damage is increased by 120,, up to 9 times. ",
+      levels: {
+        total: 10,
+        attackBaseAccuracy: "150%",
+        tpCost: [
+          { value: 25, colspan: 4 },
+          { value: 32, colspan: 5 },
+          { value: 40, colspan: 1 }
+        ],
+        cooldown: [
+          { value: 9, colspan: 4 },
+          { value: 8, colspan: 5 },
+          { value: 6, colspan: 1 }
+        ],
+        incomingDamageReduction: [
+          { value: "20%", colspan: 1 },
+          { value: "22%", colspan: 1 },
+          { value: "24%", colspan: 1 },
+          { value: "26%", colspan: 2 },
+          { value: "28%", colspan: 1 },
+          { value: "30%", colspan: 1 },
+          { value: "32%", colspan: 1 },
+          { value: "34%", colspan: 2 }
+        ],
+        attackBaseDamage: [
+          { value: "250%", colspan: 1 },
+          { value: "275%", colspan: 1 },
+          { value: "300%", colspan: 1 },
+          { value: "325%", colspan: 2 },
+          { value: "350%", colspan: 1 },
+          { value: "375%", colspan: 1 },
+          { value: "400%", colspan: 1 },
+          { value: "425%", colspan: 2 }
+        ],
+        attackDamageLimit: [
+          { value: "750%", colspan: 1 },
+          { value: "825%", colspan: 1 },
+          { value: "900%", colspan: 1 },
+          { value: "975%", colspan: 2 },
+          { value: "1050%", colspan: 1 },
+          { value: "1125%", colspan: 1 },
+          { value: "1200%", colspan: 1 },
+          { value: "1275%", colspan: 2 }
+        ]
+      },
+      bodyPartsUsed: "Arms",
+      type: "Attack/Defense",
+      requeriments: {
+        weapon: "Shield",
+        skill: "Elemental Shield",
         level: 3
       }
     }
