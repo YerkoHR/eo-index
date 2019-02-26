@@ -1,5 +1,6 @@
 import React from "react";
 import SkillTable from "./SkillTable";
+//{"Force Boost:  " + character.force[type].name}
 
 const SkillForce = ({ character }) => {
   const force = ["boost", "break"];
@@ -10,7 +11,7 @@ const SkillForce = ({ character }) => {
         {force.map(type => (
           <div className="container-force" key={type}>
             <h2 className="subtitle">
-              {"Force Boost:  " + character.force[type].name}
+              {`Force ${type}:  ${character.force[type].name}`}
             </h2>
             <p>{character.force[type].description}</p>
             {character.force[type].levels && (
