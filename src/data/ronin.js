@@ -30,7 +30,7 @@ const ronin = {
         total: 8,
         duration: [
           { value: 3, colspan: 3 },
-          { value: 4, colpan: 4 },
+          { value: 4, colspan: 4 },
           { value: 5, colspan: 1 }
         ],
         attackIncrease: [
@@ -73,7 +73,7 @@ const ronin = {
         total: 8,
         duration: [
           { value: 3, colspan: 3 },
-          { value: 4, colpan: 4 },
+          { value: 4, colspan: 4 },
           { value: 5, colspan: 1 }
         ],
         defenseIncrease: [
@@ -124,7 +124,7 @@ const ronin = {
         total: 8,
         duration: [
           { value: 3, colspan: 3 },
-          { value: 4, colpan: 4 },
+          { value: 4, colspan: 4 },
           { value: 5, colspan: 1 }
         ],
         speedMultiplier: [
@@ -176,7 +176,7 @@ const ronin = {
         accuracyModifier: "-8%",
         tpCost: [
           { value: 3, colspan: 4 },
-          { value: 6, coslpan: 5 },
+          { value: 6, colspan: 5 },
           { value: 10, colspan: 1 }
         ],
         damage: [
