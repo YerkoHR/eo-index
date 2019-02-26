@@ -190,7 +190,7 @@ const sovereign = {
     {
       name: "Reinforce",
       description:
-        "Increases one row of party members' defense for a set amount of turns.",
+        "When the user applies a buff to a party member, that party member's HP is restored.",
       levels: {
         total: 10,
         healingPower: [
