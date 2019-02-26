@@ -327,7 +327,10 @@ const farmer = {
       levels: {
         total: 6,
         tpCost: [{ value: 9, colspan: 5 }, { value: 14, colspan: 1 }],
-        tpCost: [{ value: "20%", colspan: 5 }, { value: "200%", colspan: 1 }],
+        speedModifier: [
+          { value: "20%", colspan: 5 },
+          { value: "200%", colspan: 1 }
+        ],
         baseSleepChance: ["50%", "52%", "55%", "57%", "60%", "75%"]
       },
       bodyPartsUsed: "Head",
@@ -344,9 +347,9 @@ const farmer = {
         "Restores all party members' TP every time they take a set number of steps.",
       levels: {
         total: 8,
-        stepsToRestore: [12, 11, 10, 9, 8, 7, 6, 3],
         staticTpRestore: 1,
-        percentageMaxtpRestore: "1%"
+        percentageMaxtpRestore: "1%",
+        stepsToRestore: [12, 11, 10, 9, 8, 7, 6, 3]
       },
       bodyPartsUsed: null,
       type: "Heal",
