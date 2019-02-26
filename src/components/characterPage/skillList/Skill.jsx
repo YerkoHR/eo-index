@@ -29,7 +29,7 @@ const Skill = ({ skill, name }) => {
               </span>
             )))}
       </div>
-      {skill.type !== "Gathering" && <SkillTable skill={skill} />}
+      {skill.levels && <SkillTable skill={skill} />}
     </div>
   );
 };

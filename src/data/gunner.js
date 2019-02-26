@@ -227,9 +227,7 @@ const gunner = {
     {
       name: "Mine",
       description: "Increases meterial yield from mining in hte labyrinth.",
-      levels: {
-        total: 1
-      },
+      levels: null,
       bodyPartsUsed: null,
       type: "Gathering",
       requeriments: null

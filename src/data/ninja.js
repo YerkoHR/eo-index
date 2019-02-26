@@ -221,9 +221,7 @@ const ninja = {
     {
       name: "Chop",
       description: "Increases material yield from chopping in the laberinth.",
-      levels: {
-        total: 1
-      },
+      levels: null,
       type: "Gathering",
       requeriments: null
     }

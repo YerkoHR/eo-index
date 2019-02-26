@@ -180,6 +180,14 @@ const medic = {
         skill: null,
         level: null
       }
+    },
+    {
+      name: "Take",
+      description: "Increases material yield from taking in the labyrinth.",
+      levels: null,
+      bodyPartsUsed: null,
+      type: "Gathering",
+      requeriments: null
     }
   ],
   veteran: [

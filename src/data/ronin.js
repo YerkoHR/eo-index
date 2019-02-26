@@ -246,9 +246,7 @@ const ronin = {
     {
       name: "Mine",
       description: "Increases material yield from mining in the labyritnth",
-      levels: {
-        total: 1
-      },
+      levels: null,
       bodyPartsUsed: null,
       type: "Gathering",
       requeriments: null

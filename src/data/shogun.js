@@ -187,9 +187,7 @@ const shogun = {
     {
       name: "Take",
       description: "Increases material yield from taking in the labyrinth.",
-      levels: {
-        total: 1
-      },
+      levels: null,
       bodyPartsUsed: null,
       type: "Gathering",
       requeriments: null

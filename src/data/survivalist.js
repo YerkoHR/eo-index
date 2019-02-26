@@ -210,11 +210,9 @@ const survivalist = {
     {
       name: "Natural Instinct",
       description: "Find additional material when taking, chopping, or mining.",
-      levels: {
-        total: 1
-      },
+      levels: null,
       bodyPartsUsed: null,
-      type: "Gathering",
+      type: "Field",
       requeriments: null
     }
   ],
