@@ -8,9 +8,13 @@ const Header = ({ title, subTitle }) => (
         <Link to="/" className="navbar-item">
           Etrian Odyssey Classes
         </Link>
-        <Link to="/status-info" className="navbar-item">
-          Combat Variables
-        </Link>
+      </div>
+      <div className="navbar-end">
+        <div className="navbar-item">
+          <Link to="/status-info" className="navbar-item">
+            Combat Variables
+          </Link>
+        </div>
       </div>
     </nav>
     <div className={"hero is-primary " + title}>
