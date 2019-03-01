@@ -109,14 +109,14 @@ const landsknecht = {
           { value: "40%", colspan: 2 }
         ],
         damage: [
-          { value: "80%", colspan: 4 },
-          { value: "85%", colspan: 4 },
-          { value: "90%", colspan: 4 },
-          { value: "95%", colspan: 4 },
-          { value: "100%", colspan: 4 },
-          { value: "105%", colspan: 4 },
-          { value: "110%", colspan: 4 },
-          { value: "115%", colspan: 4 }
+          { value: "80%", colspan: 1 },
+          { value: "85%", colspan: 1 },
+          { value: "90%", colspan: 1 },
+          { value: "95%", colspan: 2 },
+          { value: "100%", colspan: 1 },
+          { value: "105%", colspan: 1 },
+          { value: "110%", colspan: 1 },
+          { value: "115%", colspan: 2 }
         ]
       },
       bodyPartsUsed: "Arms",
@@ -158,14 +158,14 @@ const landsknecht = {
           { value: "40%", colspan: 2 }
         ],
         damage: [
-          { value: "80%", colspan: 4 },
-          { value: "85%", colspan: 4 },
-          { value: "90%", colspan: 4 },
-          { value: "95%", colspan: 4 },
-          { value: "100%", colspan: 4 },
-          { value: "105%", colspan: 4 },
-          { value: "110%", colspan: 4 },
-          { value: "115%", colspan: 4 }
+          { value: "80%", colspan: 1 },
+          { value: "85%", colspan: 1 },
+          { value: "90%", colspan: 1 },
+          { value: "95%", colspan: 2 },
+          { value: "100%", colspan: 1 },
+          { value: "105%", colspan: 1 },
+          { value: "110%", colspan: 1 },
+          { value: "115%", colspan: 2 }
         ]
       },
       bodyPartsUsed: "Arms",
@@ -207,14 +207,14 @@ const landsknecht = {
           { value: "40%", colspan: 2 }
         ],
         damage: [
-          { value: "80%", colspan: 4 },
-          { value: "85%", colspan: 4 },
-          { value: "90%", colspan: 4 },
-          { value: "95%", colspan: 4 },
-          { value: "100%", colspan: 4 },
-          { value: "105%", colspan: 4 },
-          { value: "110%", colspan: 4 },
-          { value: "115%", colspan: 4 }
+          { value: "80%", colspan: 1 },
+          { value: "85%", colspan: 1 },
+          { value: "90%", colspan: 1 },
+          { value: "95%", colspan: 2 },
+          { value: "100%", colspan: 1 },
+          { value: "105%", colspan: 1 },
+          { value: "110%", colspan: 1 },
+          { value: "115%", colspan: 2 }
         ]
       },
       bodyPartsUsed: "Arms",
