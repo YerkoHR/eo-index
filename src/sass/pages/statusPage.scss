@@ -1,0 +1,45 @@
+img {
+  border-radius: 10px;
+}
+.img__all {
+  width: 300px;
+}
+.img__ailments {
+  width: 400px;
+}
+.img__small {
+  width: 150px;
+}
+.card__small {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  justify-items: center;
+  margin: 2rem 0;
+}
+.card__medium {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  align-items: center;
+  justify-items: center;
+  margin: 2rem 0;
+  padding: 0 0.5rem;
+}
+.card__large {
+  padding: 1rem 0;
+}
+.card__large__top {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.card__large__bottom {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.card__large--title {
+  text-align: center;
+}
