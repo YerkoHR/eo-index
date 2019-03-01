@@ -1,0 +1,27 @@
+$classes: (
+  Hero: #5b8844,
+  Protector: #ffcf8d,
+  Ronin: #454e6d,
+  Medic: #ccab40,
+  Survivalist: #971417,
+  Gunner: #476f9f,
+  War: #a17643,
+  Highlander: #bad1c5,
+  Sovereign: #bf0000,
+  Shogun: #513a3d,
+  Zodiac: #d5c0df,
+  Ninja: #7e7f00,
+  Farmer: #f7b758,
+  Landsknecht: #5c7fb4,
+  Nightseeker: #7a8b81,
+  Arcanist: #9adc65,
+  Imperial: #183040,
+  Pugilist: #aa7c4f,
+  Harbinger: #904bbc
+);
+
+@each $key, $value in $classes {
+  .#{$key} {
+    background-color: $value !important;
+  }
+}
