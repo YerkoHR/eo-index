@@ -7,7 +7,7 @@ const ClassList = () => (
   <ul>
     {characters.map(character => (
       <li key={character}>
-        <Link to={"/" + character}>
+        <Link to={"/class/" + character}>
           <div className="box">{character}</div>
         </Link>
       </li>

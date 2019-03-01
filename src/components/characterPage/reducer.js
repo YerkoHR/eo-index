@@ -18,7 +18,9 @@ import survivalist from "../../data/survivalist";
 import warMagus from "../../data/warMagus";
 import zodiac from "../../data/zodiac";
 
-const reducer = props => {
+const reducer = className => {
+  // handle lowercase in URL since react router is case sensitive by default in ambiguous paths.
+  const props = className.replace(/^./, str => str.toUpperCase());
   switch (props) {
     case "Hero":
       return hero;
@@ -59,7 +61,7 @@ const reducer = props => {
     case "Zodiac":
       return zodiac;
     default:
-      return console.log("error");
+      return null;
   }
 };
 
