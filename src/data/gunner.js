@@ -549,6 +549,7 @@ const gunner = {
       description:
         "Gives attack skills a chance to activate twice. Double Action does not activate on Link skills, Chase skills, or counterattack skills.",
       levels: {
+        total: 8,
         chance: ["4%", "5%", "6%", "7%", "8%", "9%", "10%", "15%"]
       },
       bodyPartsUsed: null,
