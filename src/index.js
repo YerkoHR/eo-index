@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import ClassList from "./components/classList";
 import Routes from "./routes";
 
+import "./sass/main.scss";
 import "bulma/css/bulma.css";
 
 const App = () => {

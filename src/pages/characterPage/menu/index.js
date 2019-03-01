@@ -1,7 +1,5 @@
 import React from "react";
 import { expertise } from "../skillList/index";
-import "./styles.css";
-// <a href={"#" + skill.name}>{skill.name}</a>
 
 const Menu = ({ character }) => {
   const scrollTo = id =>

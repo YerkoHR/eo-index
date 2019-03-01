@@ -1,12 +1,10 @@
 import React from "react";
 import reducer from "./reducer";
-import Layout from "../Layout";
+import Layout from "../../components/Layout";
 import SkillList from "./skillList";
 import Menu from "./menu";
 import ToTopBtn from "./toTopBtn";
 import NotFound from "../../pages/NotFound";
-
-import "./styles.css";
 
 const CharacterPage = ({ match, location }) => {
   const character = reducer(match.params.character);
@@ -15,11 +13,11 @@ const CharacterPage = ({ match, location }) => {
     <>
       {character ? (
         <Layout title={character.name} subTitle="Class">
-          <div className="page-container">
-            <div className="left">
+          <div className="grid">
+            <div className="grid__left">
               <Menu character={character} />
             </div>
-            <div className="right">
+            <div className="grid__right">
               <SkillList character={character} />
             </div>
           </div>

@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "./style.css";
-
 const Header = ({ title, subTitle }) => (
   <section id="header">
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
           Etrian Odyssey Classes
+        </Link>
+        <Link to="/status-info" className="navbar-item">
+          Combat Variables
         </Link>
       </div>
     </nav>

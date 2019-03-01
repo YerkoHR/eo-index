@@ -1,12 +1,11 @@
 import React from "react";
 import SkillTable from "./SkillTable";
-//{"Force Boost:  " + character.force[type].name}
 
 const SkillForce = ({ character }) => {
   const force = ["boost", "break"];
 
   return (
-    <div className="section section-char">
+    <div className="section section__info">
       <div className="content is-small">
         {force.map(type => (
           <div className="container-force" key={type}>
