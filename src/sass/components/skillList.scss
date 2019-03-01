@@ -1,0 +1,26 @@
+.section__info {
+  border: 2px solid #f5f5f5;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  padding: 3rem 1.5rem 1.5rem 1.5rem !important;
+
+  .container-force:first-child {
+    margin-bottom: 4rem;
+  }
+
+  .skill-container {
+    margin: 4rem 0;
+  }
+}
+
+table td,
+table th {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+.horizontal-th {
+  width: 150px;
+}
+.tag {
+  color: #f5f5f5 !important;
+}
