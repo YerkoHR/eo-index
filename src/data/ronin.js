@@ -169,7 +169,8 @@ const ronin = {
     },
     {
       name: "Air Blade",
-      description: "",
+      description:
+        "Deals ranged STR-based cut damage to one enemy. Becomes a critical hit if used when the user is in any Stance state.",
       levels: {
         total: 10,
         speedModifier: "70%",
