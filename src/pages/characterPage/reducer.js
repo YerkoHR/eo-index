@@ -20,8 +20,8 @@ import zodiac from "../../data/zodiac";
 
 const reducer = className => {
   // handle lowercase in URL since react router is case sensitive by default in ambiguous paths.
-  //const props = className.replace(/^./, str => str.toUpperCase());
-  switch (className) {
+  const props = className.replace(/^./, str => str.toUpperCase());
+  switch (props) {
     case "Hero":
       return hero;
     case "Ninja":
