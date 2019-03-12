@@ -51,7 +51,7 @@ const shogun = {
       levels: {
         total: 10,
         accuracyModifier: "+20%",
-        toCost: [
+        tpCost: [
           { value: 3, colspan: 4 },
           { value: 6, colspan: 5 },
           { value: 9, colspan: 1 }
