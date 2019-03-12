@@ -7,8 +7,7 @@ import ToTopBtn from "./toTopBtn";
 import NotFound from "../../pages/NotFound";
 
 const CharacterPage = ({ match, location }) => {
-  const character = reducer(match.params.character)
-  );
+  const character = reducer(match.params.character);
 
   return (
     <>
