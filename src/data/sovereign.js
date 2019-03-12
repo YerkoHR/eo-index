@@ -140,7 +140,7 @@ const sovereign = {
           { value: 5, colspan: 4 },
           { value: 6, colspan: 1 }
         ],
-        fireDamageIncrease: [
+        voltDamageIncrease: [
           { value: "5%", colspan: 1 },
           { value: "10%", colspan: 1 },
           { value: "15%", colspan: 2 },
@@ -174,13 +174,13 @@ const sovereign = {
           { value: 5, colspan: 4 },
           { value: 6, colspan: 1 }
         ],
-        fireDamageIncrease: [
+        defenseIncrease: [
           { value: "15%", colspan: 1 },
           { value: "17%", colspan: 1 },
           { value: "19%", colspan: 2 },
           { value: "21%", colspan: 1 },
           { value: "23%", colspan: 1 },
-          { value: "35%", colspan: 2 }
+          { value: "25%", colspan: 2 }
         ]
       },
       bodyPartsUsed: "Head",
