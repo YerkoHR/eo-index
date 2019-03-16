@@ -18,6 +18,7 @@ const nightseeker = {
         "Deals melee STR-based cut damage to one enemy. If the target has an ailment, that ailment is forced to last longer",
       bodyPartsUsed: "Arms",
       levels: {
+        total: 3,
         durationIncrease: 1,
         damage: ["500%", "950%", "1400%"]
       }
@@ -118,17 +119,7 @@ const nightseeker = {
           { value: 8, colspan: 4 },
           { value: 12, colspan: 1 }
         ],
-        damage: [
-          "160%",
-          "167%",
-          "174%",
-          "199%",
-          "206%",
-          "213",
-          ,
-          "220%",
-          "260%"
-        ]
+        damage: ["160%", "167%", "174%", "199%", "206%", "213", "220%", "260%"]
       },
       bodyPartsUsed: "Arms",
       type: "Attack",
@@ -200,7 +191,7 @@ const nightseeker = {
     {
       name: "Chop",
       description: "Increases material yield from chopping in the labyrinth.",
-      levels: {},
+      levels: null,
       bodyPartsUsed: null,
       type: "Gathering",
       requeriments: null
@@ -343,6 +334,7 @@ const nightseeker = {
       description:
         "For a set amount of steps in the Labyrinth, increases the chance of preemptive attacks.",
       levels: {
+        total: 6,
         tpCost: [{ value: 10, colspan: 5 }, { value: 15, colspan: 1 }],
         duration: [60, 70, 80, 90, 100, 255],
         chanceIncrease: ["+6%", "+7%", "+8%", "+9%", "+10%", "+20%"]
@@ -535,7 +527,7 @@ const nightseeker = {
       }
     },
     {
-      name: "",
+      name: "Follow Trace",
       description:
         "After using an attack skill on one target, if the target is afflicted with an ailment, the user has a chance to repeat the attack skill, for full damage.",
       levels: {
