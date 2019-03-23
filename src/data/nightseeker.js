@@ -228,7 +228,7 @@ const nightseeker = {
         accuracyModifier: "+5%",
         tpCost: [{ value: 3, colspan: 5 }, { value: 5, colspan: 1 }],
         damage: [{ value: "125%", colspan: 5 }, { value: "150%", colspan: 1 }],
-        baseCurseChance: ["35%", "38%", "41%", "44%", "47%", "60%"]
+        baseParalyzeChance: ["35%", "38%", "41%", "44%", "47%", "60%"]
       },
       bodyPartsUsed: "Arms",
       type: "Attack",
