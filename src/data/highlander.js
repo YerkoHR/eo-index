@@ -239,7 +239,8 @@ const highlander = {
     },
     {
       name: "Legion Burst",
-      description: "",
+      description:
+        "Consumes a percentage of all party members' current HP to deal melee STR-based stab damage to all enemies.",
       levels: {
         total: 8,
         speedModifier: "100%",
