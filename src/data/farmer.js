@@ -1,3 +1,5 @@
+// Skill requirements revisited
+
 const farmer = {
   name: "Farmer",
   force: {
@@ -191,7 +193,7 @@ const farmer = {
       requeriments: {
         weapon: null,
         skill: [
-          { name: "Strange Seeds", level: 2 },
+          { name: "Strange Seeds", level: 3 },
           { name: "Play Possum", level: 1 }
         ]
       }
@@ -240,7 +242,11 @@ const farmer = {
       },
       bodyPartsUsed: null,
       type: "Field",
-      requeriments: null
+      requeriments: {
+        weapon: null,
+        skill: "Flee",
+        level: 1
+      }
     },
     {
       name: "Safe Stroll",
