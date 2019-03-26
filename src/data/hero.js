@@ -1,3 +1,5 @@
+// Skill requirements revisited
+
 const hero = {
   name: "Hero",
   force: {
@@ -425,7 +427,7 @@ const hero = {
       requeriments: {
         weapon: "Sword",
         skill: "Heroic Steel",
-        level: 2
+        level: 1
       }
     },
     {
@@ -564,7 +566,7 @@ const hero = {
       requeriments: {
         weapon: "Sword",
         skill: "Burst Blade",
-        level: 3
+        level: 2
       }
     },
     {
@@ -615,11 +617,7 @@ const hero = {
       },
       bodyPartsUsed: null,
       type: "Support",
-      requeriments: {
-        weapon: null,
-        skill: "Graceful Image",
-        level: 3
-      }
+      requeriments: null
     },
     {
       name: "Retain Force",
