@@ -1,3 +1,5 @@
+// Skill requirements revisited
+
 const landsknecht = {
   name: "Landsknecht",
   force: {
@@ -587,6 +589,7 @@ const landsknecht = {
       type: "Attack",
       requeriments: {
         weapon: "Sword or Rapier",
+        skill: "Link Mastery",
         level: 2
       }
     },
