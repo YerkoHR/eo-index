@@ -1,3 +1,5 @@
+// Skill requirements revisited
+
 const survivalist = {
   name: "Survivalist",
   force: {
@@ -158,7 +160,11 @@ const survivalist = {
       },
       bodyPartsUsed: null,
       type: "Field",
-      requeriments: null
+      requeriments: {
+        weapon: null,
+        skill: "Safe Passage",
+        level: 2
+      }
     },
     {
       name: "Resuscitate",
@@ -212,7 +218,7 @@ const survivalist = {
       description: "Find additional material when taking, chopping, or mining.",
       levels: null,
       bodyPartsUsed: null,
-      type: "Field",
+      type: "Gathering",
       requeriments: null
     }
   ],
@@ -374,7 +380,7 @@ const survivalist = {
       requeriments: {
         weapon: null,
         skill: "Risk Perception",
-        level: 2
+        level: 1
       }
     },
     {
