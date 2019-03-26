@@ -1,3 +1,5 @@
+// Skill requirements revisited
+
 const sovereign = {
   name: "Sovereign",
   force: {
@@ -83,7 +85,11 @@ const sovereign = {
       },
       bodyPartsUsed: "Head",
       type: "Buff",
-      requeriments: null
+      requeriments: {
+        weapon: null,
+        skill: "Attack Order",
+        level: 2
+      }
     },
     {
       name: "Freeze Arms",
@@ -117,7 +123,11 @@ const sovereign = {
       },
       bodyPartsUsed: "Head",
       type: "Buff",
-      requeriments: null
+      requeriments: {
+        weapon: null,
+        skill: "Attack Order",
+        level: 2
+      }
     },
     {
       name: "Shock Arms",
@@ -151,7 +161,11 @@ const sovereign = {
       },
       bodyPartsUsed: "Head",
       type: "Buff",
-      requeriments: null
+      requeriments: {
+        weapon: null,
+        skill: "Attack Order",
+        level: 2
+      }
     },
     {
       name: "Guard Order",
