@@ -1,3 +1,5 @@
+// Skill requirements revisited
+
 const ronin = {
   name: "Ronin",
   force: {
@@ -44,7 +46,11 @@ const ronin = {
       },
       bodyPartsUsed: null,
       type: "Stance",
-      requeriments: null
+      requeriments: {
+        weapon: "Katana",
+        skill: null,
+        level: null
+      }
     },
     {
       name: "Upward Slash",
@@ -95,7 +101,11 @@ const ronin = {
       },
       bodyPartsUsed: null,
       type: "Stance",
-      requeriments: null
+      requeriments: {
+        weapon: "Katana",
+        skill: null,
+        level: null
+      }
     },
     {
       name: "Charging Trust",
@@ -146,7 +156,11 @@ const ronin = {
       },
       bodyPartsUsed: null,
       type: "Stance",
-      requeriments: null
+      requeriments: {
+        weapon: "Katana",
+        skill: null,
+        level: null
+      }
     },
     {
       name: "Sheath Strike",
