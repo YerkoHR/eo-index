@@ -1,3 +1,5 @@
+// Skill requirements revisited
+
 const highlander = {
   name: "Highlander",
   force: {
@@ -41,7 +43,11 @@ const highlander = {
       },
       bodyPartsUsed: "Arms",
       type: "Attack",
-      requeriments: null
+      requeriments: {
+        weapon: "Spear",
+        skill: null,
+        level: null
+      }
     },
     {
       name: "Spear Assist",
@@ -73,8 +79,8 @@ const highlander = {
       type: "Attack",
       requeriments: {
         weapon: "Spear",
-        skill: null,
-        level: null
+        skill: "Long Thrust",
+        level: 2
       }
     },
     {
