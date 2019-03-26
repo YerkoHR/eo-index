@@ -1,3 +1,5 @@
+// Skill requirements revisited
+
 const protector = {
   name: "Protector",
   force: {
@@ -38,7 +40,8 @@ const protector = {
     },
     {
       name: "Rear Guard",
-      description: "Reduces physical damage to the back row for one turn. If, during the turn, the user is inflicted with panic, sleep, or their arms are bound, Rear Guard's effect will end.",
+      description:
+        "Reduces physical damage to the back row for one turn. If, during the turn, the user is inflicted with panic, sleep, or their arms are bound, Rear Guard's effect will end.",
       levels: {
         total: 4,
         toCost: [{ value: 3, colspan: 3 }, { value: 6, colspan: 1 }],
