@@ -1,3 +1,5 @@
+// Skill requirements revisited
+
 const pugilist = {
   name: "Pugilist",
   force: {
@@ -312,7 +314,7 @@ const pugilist = {
       bodyPartsUsed: null,
       type: "Support",
       requeriments: {
-        weapon: null,
+        weapon: "Cestus",
         skill: [
           { name: "One-Two Punch", level: 2 },
           { name: "Corkcrew", level: 2 }
@@ -622,6 +624,5 @@ const pugilist = {
     }
   ]
 };
-
 
 export default pugilist;
