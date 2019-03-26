@@ -1,3 +1,5 @@
+// Skill requirements revisited
+
 const medic = {
   name: "Medic",
   force: {
@@ -263,7 +265,7 @@ const medic = {
       type: "Buff",
       requeriments: {
         weapon: null,
-        skill: "unbind",
+        skill: "Unbind",
         level: 1
       }
     },
