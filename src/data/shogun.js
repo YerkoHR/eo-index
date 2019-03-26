@@ -1,3 +1,5 @@
+// Skill requirements revisited
+
 const shogun = {
   name: "Shogun",
   force: {
