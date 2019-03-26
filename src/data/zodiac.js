@@ -1,3 +1,5 @@
+// Skill requirements revisited
+
 const zodiac = {
   name: "Zodiac",
   force: {
@@ -561,7 +563,7 @@ const zodiac = {
       requeriments: {
         weapon: null,
         skill: [
-          { name: "Etheric Shoot", level: 2 },
+          { name: "Ether Shoot", level: 2 },
           { name: "Horoscope", level: 3 }
         ]
       }
