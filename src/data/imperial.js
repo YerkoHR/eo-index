@@ -1,3 +1,5 @@
+// Skill requirements revisited
+
 const imperial = {
   name: "Imperial",
   force: {
@@ -528,7 +530,7 @@ const imperial = {
       }
     },
     {
-      name: "Absorvber",
+      name: "Absorber",
       description: "Restores the user's TP when they hit an enemy's weakness.",
       levels: {
         total: 4,
