@@ -1,3 +1,5 @@
+// Skill requirements revisited
+
 const gunner = {
   name: "Gunner",
   force: {
