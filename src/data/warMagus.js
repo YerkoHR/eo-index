@@ -1,3 +1,5 @@
+// Skill requirements revisited
+
 const warMagus = {
   name: "War Magus",
   force: {
@@ -253,9 +255,13 @@ const warMagus = {
         speedModifier: ["40%", "60%", "80%", "100%", "120%", "200%"],
         healingPower: ["25%", "27%", "30%", "32%", "35%", "50%"]
       },
-      bodyPartsUsed: "Heal",
+      bodyPartsUsed: "Head",
       type: "Heal",
-      requeriments: null
+      requeriments: {
+        weapon: null,
+        skill: "War Revive",
+        level: 2
+      }
     },
     {
       name: "War Response",
@@ -338,7 +344,7 @@ const warMagus = {
       type: "Attack",
       requeriments: {
         weapon: "Sword",
-        skill: "Strength Slash",
+        skill: "Guard Slash",
         level: 2
       }
     },
@@ -384,7 +390,11 @@ const warMagus = {
       },
       bodyPartsUsed: null,
       type: "Support",
-      requeriments: null
+      requeriments: {
+        weapon: null,
+        skill: "Vampire",
+        level: 2
+      }
     },
     {
       name: "Hp Up",
